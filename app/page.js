@@ -36,9 +36,9 @@ export default function Home() {
         <h4 className="pb-3 animate__animated animate__backInLeft">Exclusive Offer -10% Off This Week</h4>
         <button className="bg-red-500 animate__animated animate__backInLeft py-2 px-4 rounded text-white cursor-pointer hover:bg-white hover:text-red-500 ">SHOP NOW</button>
     </div>
-    <div className=" absolute flex pr-7 pl-10 mt-48">
+    <div className=" absolute flex pr-7 pl-10 mt-64">
         <div className="relative">
-            <img className="pr-3" src="./banner-1.jpg"/>
+            <img className="pl-10 pr-3" src="./banner-1.jpg"/>
             <p className="absolute top-16 left-32 text-white text-xl">Camelas</p>
         </div>
         <div className="relative">
@@ -52,14 +52,32 @@ export default function Home() {
           </div>
       </div>
    </div>
-    <div className="mt-20 flex  w-100%">
-        <h1>Featured Products</h1>
-        <p className="border-slate-300"></p>
-        <h1 className="text-red-600">All</h1>
-        <h1 className="">Winter</h1>
-        <h1 className="">Various</h1>
-        <h1 className="">Greens</h1>
-      </div>
+   <section className='mt-56'>
+        <div>
+          <div className='flex'>
+              <h1 className='ml-16 text-lg font-bold'>Featured Products</h1>
+              <p className='border-t-2 w-2/6 mt-4 ml-20'></p>
+              <h3 className='ml-72 text-red-500'>All</h3>
+              <h3 className='ml-5'>Winter</h3>
+              <h3 className='ml-5'>Various</h3>
+              <h3 className='ml-5'>Greens</h3>
+          </div>
+          <div className='flex justify-center mt-8'>
+            <img className='' src='./product-1.jpg'></img>
+
+            <img className='ml-5' src='./product-2.jpg'></img>
+            <img className='ml-5' src='./product-3.jpg'></img>
+            <img className='ml-5' src='product-2.jpg'></img>
+          </div>
+        </div>
+      </section>
+      
+      <section>
+          <div className="mt-10">
+            <img src="./woman.jpg"></img>
+          </div>
+      </section>
+      
    </>
   );
 }
